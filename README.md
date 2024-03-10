@@ -1,4 +1,5 @@
 .env file in /bot directory
+
 TOKEN=(your bot token)
 
 POSTGRES_DB=name of your database
