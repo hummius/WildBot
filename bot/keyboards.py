@@ -2,7 +2,7 @@ from aiogram import types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 start_kb = [
-    [types.KeyboardButton(text='Получить информацию по товару<')],
+    [types.KeyboardButton(text='Получить информацию по товару')],
     [types.KeyboardButton(text='Остановить уведомления')],
     [types.KeyboardButton(text='Получить информацию из БД')],
 ]
