@@ -1,3 +1,4 @@
+import datetime
 from typing import Dict, Any
 
 from aiogram.types import Message
@@ -11,7 +12,8 @@ from db.models import User
 async def orm_request(session: AsyncSession, data: Dict, msg: Message) -> None:
     obj = Request(
         user_id=msg.from_user.id,
-        vendor_code=data['code']
+        vendor_code=data['code'],
+        time=datetime.datetime.now(),
     )
     session.add(obj)
     await session.commit()
